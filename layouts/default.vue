@@ -8,8 +8,3 @@
     <slot />
   </div>
 </template>
-<style>
-.header {
-  border-bottom: 1px solid;
-}
-</style>

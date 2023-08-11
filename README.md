@@ -77,6 +77,18 @@ vscode保存时自动格式化，不需要prettier。先禁用prettier
 }
 ```
 
+## ByteMD
+
+<https://bytemd.js.org/>
+
+<https://github.6bw.fun/bytedance/bytemd/tree/main/examples/nuxt3>
+
+安装vue3版本的bytemmd，和最基础的解析插件
+
+```bash
+pnpm add @bytemd/vue-next @bytemd/plugin-gfm
+```
+
 ## QA
 
 ### Cannot find module 'typescript'
