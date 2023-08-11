@@ -4,13 +4,20 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "lint": "eslint --ext .ts,.js,.vue .",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/eslint-module": "^4.1.0",
     "@types/node": "^18.17.3",
+    "eslint": "^8.46.0",
     "nuxt": "^3.6.5"
+    
+    ,
+    "typescript": "^5.1.6"
   }
 }
