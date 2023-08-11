@@ -83,10 +83,20 @@ vscode保存时自动格式化，不需要prettier。先禁用prettier
 
 <https://github.6bw.fun/bytedance/bytemd/tree/main/examples/nuxt3>
 
+### demo01
+
 安装vue3版本的bytemmd，和最基础的解析插件
 
 ```bash
 pnpm add @bytemd/vue-next @bytemd/plugin-gfm
+```
+
+### demo02
+
+安装其他插件
+
+```bash
+pnpm add @bytemd/plugin-breaks @bytemd/plugin-frontmatter @bytemd/plugin-gemoji @bytemd/plugin-highlight @bytemd/plugin-math @bytemd/plugin-medium-zoom @bytemd/plugin-mermaid
 ```
 
 ## QA

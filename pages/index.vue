@@ -1,10 +1,21 @@
 <template>
   <div id="main">
-    <h2><a href="https://bytemd.js.org/" target="_blank">ByteMD 示例</a></h2>
-    <p>Playground here: <a href="https://bytemd.js.org/playground/">https://bytemd.js.org/playground/</a></p>
-    <NuxtLink to="/demo01">
-      <h3>基础使用</h3>
-    </NuxtLink>
+    <div>
+      <h2><a href="https://bytemd.js.org/" target="_blank">ByteMD 示例</a></h2>
+      <p>Playground here: <a href="https://bytemd.js.org/playground/">https://bytemd.js.org/playground/</a></p>
+    </div>
+    <div>
+      <NuxtLink to="/demo01">
+        <h3>基础使用</h3>
+      </NuxtLink>
+      <p>只安装一个基础的解析插件</p>
+    </div>
+    <div>
+      <NuxtLink to="/demo02">
+        <h3>插件安装</h3>
+      </NuxtLink>
+      <p>安装了各种<a href="https://bytemd.js.org/#plugin-system">插件</a>，调整了高度</p>
+    </div>
   </div>
 </template>
 <style scoped>

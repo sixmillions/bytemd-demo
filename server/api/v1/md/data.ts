@@ -64,44 +64,48 @@ export const data3 = {
   title: 'ByteMD Docs Full',
   slug: 'bytemd-docs-full',
   cnt: data2.cnt + `
-  ## Footnotes
+## image
 
-  Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+![logo.png](https://s.sixmillions.cn/img/logo/logo.png)
 
-  [^1]: This is the first footnote.
-  [^bignote]: Here's one with multiple paragraphs and code.
+## Footnotes
 
-      Indent paragraphs to include them in the footnote.
+Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 
-      \`{ my code }\`
+[^1]: This is the first footnote.
+[^bignote]: Here's one with multiple paragraphs and code.
 
-      Add as many paragraphs as you like.
+    Indent paragraphs to include them in the footnote.
 
-  ## Gemoji
+    \`{ my code }\`
 
-  Thumbs up: :+1:, thumbs down: :-1:.
+    Add as many paragraphs as you like.
 
-  Families: :family_man_man_boy_boy:
+## Gemoji
 
-  Long flags: :wales:, :scotland:, :england:.
+Thumbs up: :+1:, thumbs down: :-1:.
 
-  ## Math Equation
+Families: :family_man_man_boy_boy:
 
-  Inline math equation: $a+b$
+Long flags: :wales:, :scotland:, :england:.
 
-  $$
-  \\displaystyle \\left( \\sum_{k=1}^n a_k b_k \\right)^2 \\leq \\left( \\sum_{k=1}^n a_k^2 \\right) \\left( \\sum_{k=1}^n b_k^2 \\right)
-  $$
+## Math Equation
 
-  ## Mermaid Diagrams
+Inline math equation: $a+b$
 
-  \`\`\`mermaid
-  graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-    \`\`\`
+$$
+\\displaystyle \\left( \\sum_{k=1}^n a_k b_k \\right)^2 \\leq \\left( \\sum_{k=1}^n a_k^2 \\right) \\left( \\sum_{k=1}^n b_k^2 \\right)
+$$
+
+## Mermaid Diagrams
+
+\`\`\`mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+  \`\`\`
 
 `
 }
