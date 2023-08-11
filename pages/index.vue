@@ -2,6 +2,7 @@
   <div id="main">
     <div>
       <h2><a href="https://bytemd.js.org/" target="_blank">ByteMD 示例</a></h2>
+      <p>官网: <a href="https://bytemd.js.org/">https://bytemd.js.org/</a></p>
       <p>Playground here: <a href="https://bytemd.js.org/playground/">https://bytemd.js.org/playground/</a></p>
     </div>
     <div>
@@ -21,6 +22,12 @@
         <h3>代码块主题</h3>
       </NuxtLink>
       <p>代码主题推荐；代码主题切换</p>
+    </div>
+    <div>
+      <NuxtLink to="/demo04">
+        <h3>Viewer使用</h3>
+      </NuxtLink>
+      <p>渲染Markdown文档</p>
     </div>
   </div>
 </template>
