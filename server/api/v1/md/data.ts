@@ -110,4 +110,143 @@ graph TD;
 `
 }
 
-export const POST_LIST = [data1, data2, data3]
+export const data4 = {
+  slug: 'code-block-theme',
+  title: 'Code Theme',
+  cnt: `
+# 代码主题测试
+
+## Java
+
+\`\`\`java
+package cn.sixmillions.demo;
+
+import java.time.LocalDateTime;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World! " + LocalDateTime.now());
+    }
+}
+\`\`\`
+
+## JS
+
+\`\`\`js
+js
+import gfm from '@bytemd/plugin-gfm'
+import { Editor, Viewer } from 'bytemd'
+
+const plugins = [
+  gfm(),
+  // Add more plugins here
+]
+
+const editor = new Editor({
+  target: document.body, // DOM to render
+  props: {
+    value: '',
+    plugins,
+  },
+})
+
+editor.on('change', (e) => {
+  editor.$set({ value: e.detail.value })
+})
+\`\`\`
+
+## Python
+
+\`\`\`python
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
+
+if __name__ == '__main__':
+    app.run()
+\`\`\`
+
+## Bash
+
+\`\`\`bash
+#!/bin/bash
+echo "一共输入了 $# 个参数"
+while [ "$1" != "" ]; do
+  echo "剩下 $# 个参数"
+  echo "参数：$1"
+  shift
+done
+\`\`\`
+
+## YAML
+
+\`\`\`yml
+server:
+  port: 8201
+#数据源配置
+spring:
+  redis:
+    host: 10.203.193.135
+    port: 30895
+    password: Pass1234
+    database: 0
+    timeout: 2000
+\`\`\`
+
+## Html CSS
+
+\`\`\`html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .logo {
+            width: 200px;
+        }
+    </style>
+    <script>
+        var flag = true
+        function addMedal() {
+            console.log("切换颜色")
+            var logos = document.getElementsByClassName("logo")
+            console.log(logos)
+            for (let i = 0; i < logos.length; i++) {
+                if (flag) {
+                    logos[i].style.width = "160px"
+                    logos[i].style.border = "20px solid #f40"
+                } else {
+                    logos[i].style = ""
+                    logos[i].style.width = "200px"
+                }
+            }
+            flag = !flag
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="addMedal()">添加/取消边框</button>
+    <div>
+        <p>width 160; boeder 20</p>
+        <img class='logo' src="./images/logo-b.jpg" alt="logo">
+        <img class='logo' src="./images/logo-b.jpg" alt="logo">
+        <img class='logo' src="./images/logo-b.jpg" alt="logo">
+        <img class='logo' src="./images/logo-b.jpg" alt="logo">
+    </div>
+</body>
+
+</html>
+\`\`\`
+`
+}
+
+export const POST_LIST = [data1, data2, data3, data4]

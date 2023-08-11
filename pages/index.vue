@@ -16,6 +16,12 @@
       </NuxtLink>
       <p>安装了各种<a href="https://bytemd.js.org/#plugin-system">插件</a>，调整了高度</p>
     </div>
+    <div>
+      <NuxtLink to="/demo03">
+        <h3>代码块主题</h3>
+      </NuxtLink>
+      <p>代码主题推荐；代码主题切换</p>
+    </div>
   </div>
 </template>
 <style scoped>
