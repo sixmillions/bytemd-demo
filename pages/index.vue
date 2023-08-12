@@ -6,28 +6,43 @@
       <p>Playground here: <a href="https://bytemd.js.org/playground/">https://bytemd.js.org/playground/</a></p>
     </div>
     <div>
-      <NuxtLink to="/demo01">
+      <NuxtLink to="/demo01" target="_blank">
         <h3>基础使用</h3>
       </NuxtLink>
       <p>只安装一个基础的解析插件</p>
     </div>
     <div>
-      <NuxtLink to="/demo02">
+      <NuxtLink to="/demo02" target="_blank">
         <h3>插件安装</h3>
       </NuxtLink>
       <p>安装了各种<a href="https://bytemd.js.org/#plugin-system">插件</a>，调整了高度</p>
     </div>
     <div>
-      <NuxtLink to="/demo03">
+      <NuxtLink to="/demo03" target="_blank">
         <h3>代码块主题</h3>
       </NuxtLink>
       <p>代码主题推荐；代码主题切换</p>
     </div>
     <div>
-      <NuxtLink to="/demo04">
+      <NuxtLink to="/demo04" target="_blank">
         <h3>Viewer使用</h3>
       </NuxtLink>
       <p>渲染Markdown文档</p>
+    </div>
+    <div>
+      <NuxtLink to="/demo05" target="_blank">
+        <h3>Viewer主题切换</h3>
+      </NuxtLink>
+      <p>Viewer主题切换：dark/light</p>
+      <div>
+        <p>更多参考：</p>
+        <ul>
+          <li>https://nuxt.com/modules/color-mode</li>
+          <li>https://daisyui.com/docs/themes/</li>
+          <li>https://github.com/sindresorhus/github-markdown-css</li>
+          <li>https://tailwindcss.nuxtjs.org/examples/dark-mode</li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>

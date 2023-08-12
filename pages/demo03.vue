@@ -94,7 +94,7 @@ const setTheme = () => {
 /**
  * 代码块主题切换
  */
- @import '~/assets/css/code-block-theme.css';
+ @import '~/assets/css/theme.css';
 
 /**
  * 高度调整

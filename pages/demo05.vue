@@ -43,20 +43,25 @@ const { data } = await useFetch('/api/v1/md/bytemd-docs-full')
 content.value = data.value?.cnt ?? ''
 
 const themeClass = ref('theme__dark')
+onMounted(() => {
+  // 这里直接操作的body
+  document.getElementById('app')?.removeAttribute('class')
+  document.getElementById('app')?.classList.add(themeClass.value)
+})
 
 /**
- * 切换代码块主题
- * 实现方式：
- * 1. 将dark的所有css加上前缀 theme__dark，将light的所有css加上前缀 theme__light
- * 2. 点击theme切换按钮，实现类名切换
+ * 切换主题，这里用了最简单的方式
  */
 const setTheme = () => {
   themeClass.value = themeClass.value === 'theme__dark' ? 'theme__light' : 'theme__dark'
+  // 这里直接操作的body
+  document.getElementById('app')?.removeAttribute('class')
+  document.getElementById('app')?.classList.add(themeClass.value)
 }
 
 </script>
 <template>
-  <div id="demo02" :class="themeClass">
+  <div id="markdown-preview">
     <button @click="setTheme">
       {{ themeClass }}
     </button>
@@ -71,9 +76,26 @@ const setTheme = () => {
  @import '~/assets/css/theme.css';
 
  /**
+* dark theme
+*/
+.theme__dark {
+  background-color: #333333;
+  color: #a6adbacc;
+}
+
+.theme__dark h1,
+.theme__dark h2,
+.theme__dark h3,
+.theme__dark h4,
+.theme__dark h5,
+.theme__dark h6 {
+  color: #a6adba;
+}
+
+ /**
  * 文章内容宽度50%，并且居中
  */
-#demo02 {
+#markdown-preview {
   width: 50%;
   margin: auto;
 }
