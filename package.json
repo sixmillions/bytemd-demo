@@ -30,6 +30,7 @@
     "@bytemd/plugin-math": "^1.21.0",
     "@bytemd/plugin-medium-zoom": "^1.21.0",
     "@bytemd/plugin-mermaid": "^1.21.0",
-    "@bytemd/vue-next": "^1.21.0"
+    "@bytemd/vue-next": "^1.21.0",
+    "toc-helper": "^2.1.1"
   }
 }

@@ -58,6 +58,17 @@
         </ul>
       </div>
     </div>
+    <div>
+      <NuxtLink to="/demo07" target="_blank">
+        <h3>Demo07 Viewer 目录生成</h3>
+      </NuxtLink>
+      <div>
+        <p>更多参考：</p>
+        <ul>
+          <li>https://itlangzi.com/s/tochelper.html</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 <style scoped>
